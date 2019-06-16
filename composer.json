@@ -1,0 +1,21 @@
+{
+    "name": "hracik/php-create-avatar",
+    "description": "Create avatar from text. Pseudo-random background, pseudo-random initials.",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "8"
+    },
+    "require": {
+        "hracik/php-color-converter": "0.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hracik\\CreateAvatar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hracik\\CreateAvatar\\Tests\\": "tests/"
+        }
+    }
+}
