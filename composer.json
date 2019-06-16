@@ -1,5 +1,5 @@
 {
-    "name": "hracik/php-create-avatar",
+    "name": "hracik/php-create-avatar-from-text",
     "description": "Create avatar from text. Pseudo-random background, pseudo-random initials.",
     "license": "MIT",
     "require-dev": {
