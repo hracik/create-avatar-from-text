@@ -45,6 +45,7 @@ class CreateAvatar
         else {
 	        $write = substr($text, $textLength/2, $options['text-length']);
         }
+		$write = strtoupper($write);
 
 		$hex = '#'.substr(md5($text), 0, 6);
 		$hsl = ColorConverter::hex2hsl($hex);
@@ -67,7 +68,9 @@ class CreateAvatar
 			</svg>
 			<?php
 
-			return ob_get_contents();
+            $svg = ob_get_contents();
+		    ob_end_clean();
+		    return $svg;
 		//}
 
 		//throw new Exception('Unknown return type.');
