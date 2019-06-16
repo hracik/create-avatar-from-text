@@ -40,14 +40,14 @@ class CreateAvatar
 		$cleanText = preg_replace('/[^A-Za-z0-9]/', '', $text);
         $textLength = strlen($cleanText);
         if ($textLength/2 + $options['text-length'] > $textLength) {
-            $write = substr($text, 0, $options['text-length']);
+            $write = substr($cleanText, 0, $options['text-length']);
         }
         else {
-	        $write = substr($text, $textLength/2, $options['text-length']);
+	        $write = substr($cleanText, $textLength/2, $options['text-length']);
         }
 		$write = strtoupper($write);
 
-		$hex = '#'.substr(md5($text), 0, 6);
+		$hex = '#'.substr(md5($cleanText), 0, 6);
 		$hsl = ColorConverter::hex2hsl($hex);
 		if (empty($options['background-color'])) {
 		    $hsl[2] = 0.3;
