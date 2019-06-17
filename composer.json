@@ -6,16 +6,17 @@
         "phpunit/phpunit": "8"
     },
     "require": {
-        "hracik/php-color-converter": "0.0.*"
+        "hracik/php-color-converter": "0.0.*",
+        "symfony/options-resolver": "^4.3"
     },
     "autoload": {
         "psr-4": {
-            "Hracik\\CreateAvatar\\": "src/"
+            "Hracik\\CreateAvatarFromText\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Hracik\\CreateAvatar\\Tests\\": "tests/"
+            "Hracik\\CreateAvatarFromText\\Tests\\": "tests/"
         }
     }
 }
