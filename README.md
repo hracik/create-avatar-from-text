@@ -47,7 +47,7 @@ $svg = CreateAvatarFromText::($string, $options);
 ![](examples/2.svg)
 ![](examples/3.svg)
 
-See [examples](https://github.com/hracik/php-create-avatar-from-text/examples).
+See [examples](examples).
 
 ## Running the tests
 
